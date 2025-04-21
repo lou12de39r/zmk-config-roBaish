@@ -70,6 +70,13 @@
         under {
             bindings = <&kp UNDERSCORE>;
             key-positions = <18 19>;
+            layers = <0 2>;
+        };
+
+        login {
+            bindings = <&login>;
+            key-positions = <13 18>;
+            layers = <0>;
         };
     };
 
@@ -101,6 +108,13 @@
             #binding-cells = <0>;
             bindings = <&kp ASTERISK &kp LEFT_PARENTHESIS &kp LEFT_ARROW>;
             label = "parenthesis";
+        };
+
+        login: login {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp N1 &kp N5 &kp N0 &kp N3 &kp N4 &kp N5 &kp TAB &kp LS(W) &kp W &kp H &kp O &kp W &kp A &kp I &kp T &kp O &kp N1 &kp ENTER>;
+            label = "LOGIN";
         };
     };
 
