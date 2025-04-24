@@ -124,6 +124,15 @@
             label = "TOLAYER0";
             wait-ms = <0>;
         };
+
+        tolayer0bt: tolayer0bt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0>, <&macro_release>, <&lt 6 LANGUAGE_2>;
+
+            label = "TOLAYER0BT";
+            wait-ms = <0>;
+        };
     };
 
     behaviors {
@@ -195,7 +204,7 @@
 &none           &to_layer_0 LS(LC(TAB))  &kp UP_ARROW    &to_layer_0 LC(TAB)  &none                             &none   &none              &to_layer_0 LC(T)  &none              &mo 5
 &none           &kp LEFT_ARROW           &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp F2        &trans      &trans  &none   &mkp_exit_AML MB1  &mkp_exit_AML MB3  &mkp_exit_AML MB2  &none
 &kp LEFT_SHIFT  &none                    &kp LC(C)       &kp LC(V)            &none         &trans      &none   &none   &mkp MB4           &to_layer_0 LC(W)  &mkp MB5           &kp RIGHT_SHIFT
-&trans          &trans                   &trans          &trans               &tolayer0num  &trans      &trans  &trans                                                           &trans
+&trans          &trans                   &trans          &tolayer0bt          &tolayer0num  &trans      &trans  &trans                                                           &trans
             >;
         };
 
