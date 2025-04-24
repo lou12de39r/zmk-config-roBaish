@@ -86,11 +86,11 @@
     };
 
     macros {
-        to_layer_0: to_layer_0 {
+        to_layer_0: to_layer_0mouse {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-            label = "TO_LAYER_0";
+            label = "TO_LAYER_0MOUSE";
             wait-ms = <0>;
         };
 
@@ -114,6 +114,15 @@
             #binding-cells = <0>;
             bindings = <&kp ASTERISK &kp LEFT_PARENTHESIS &kp LEFT_ARROW>;
             label = "parenthesis";
+        };
+
+        tolayer0num: tolayer0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0>, <&macro_release>, <&lt 2 SPACE>;
+
+            label = "TOLAYER0";
+            wait-ms = <0>;
         };
     };
 
