@@ -219,10 +219,10 @@
 
         MOUSE {
             bindings = <
-&none           &to_layer_0 LS(LC(TAB))  &kp UP_ARROW    &to_layer_0 LC(TAB)  &none                                       &none   &none              &to_layer_0 LC(T)  &none              &mo 5
-&none           &kp LEFT_ARROW           &kp DOWN_ARROW  &kp RIGHT_ARROW      &to_layer_0 F2  &trans              &trans  &none   &mkp_exit_AML MB1  &mkp_exit_AML MB3  &mkp_exit_AML MB2  &none
-&kp LEFT_SHIFT  &none                    &kp LC(C)       &kp LC(V)            &none           &trans              &none   &none   &mkp MB4           &to_layer_0 LC(W)  &mkp MB5           &kp RIGHT_SHIFT
-&trans          &trans                   &trans          &tolayer0bt          &tolayer0num    &tolayer0arrow      &trans  &trans                                                           &trans
+&none           &to_layer_0 LS(LC(TAB))  &kp UP_ARROW          &to_layer_0 LC(TAB)  &none                                                       &none         &none              &to_layer_0 LC(T)  &none              &mo 5
+&none           &kp LEFT_ARROW           &kp DOWN_ARROW        &kp RIGHT_ARROW      &to_layer_0 F2  &to_layer_0 ESC      &to_layer_0 LS(LG(S))  &none         &mkp_exit_AML MB1  &mkp_exit_AML MB3  &mkp_exit_AML MB2  &none
+&kp LEFT_SHIFT  &none                    &kp LC(C)             &kp LC(V)            &none           &to_layer_0 TAB      &none                  &none         &mkp MB4           &to_layer_0 LC(W)  &mkp MB5           &kp RIGHT_SHIFT
+&kp LCTRL       &kp LEFT_WIN             &to_layer_0 LEFT_ALT  &tolayer0bt          &tolayer0num    &tolayer0arrow       &to_layer_0 BACKSPACE  &tolayer0sin                                                           &to_layer_0 DELETE
             >;
         };
 
