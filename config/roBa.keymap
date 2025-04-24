@@ -169,7 +169,7 @@
         default_layer {
             bindings = <
 &kp Q             &kp W               &kp E         &kp R             &kp T                                               &kp Y        &kp U  &lt 5 I    &kp O    &lt 5 P
-&kp A             &kp S               &kp D         &kp F             &kp G        &kp ESCAPE              &none          &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&kp A             &kp S               &kp D         &kp F             &kp G        &kp ESCAPE              &kp LS(LG(S))  &kp H        &kp J  &kp K      &kp L    &kp MINUS
 &mt LEFT_SHIFT Z  &kp X               &kp C         &kp V             &kp B        &kp TAB                 &none          &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
 &kp LCTRL         &mt LEFT_WIN LG(D)  &kp LEFT_ALT  &lt 6 LANG_HANJA  &lt 2 SPACE  &lt 3 LANG_HANGEUL      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
             >;
@@ -188,10 +188,10 @@
 
         NUM {
             bindings = <
-&none   &kp F7  &kp F8  &kp F9  &kp F10                             &kp COLON     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp COLON
-&none   &kp F4  &kp F5  &kp F6  &kp F11  &trans             &none   &kp MINUS     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp DOUBLE_QUOTES
-&none   &kp F1  &kp F2  &kp F3  &kp F12  &kp LS(LG(S))      &none   &kp PERIOD    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA
-&trans  &trans  &trans  &trans  &trans   &trans             &trans  &kp NUMBER_0                                            &none
+&none   &kp F7  &kp F8  &kp F9  &kp F10                      &kp COLON     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp COLON
+&none   &kp F4  &kp F5  &kp F6  &kp F11  &trans      &none   &kp MINUS     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp DOUBLE_QUOTES
+&none   &kp F1  &kp F2  &kp F3  &kp F12  &none       &none   &kp PERIOD    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA
+&trans  &trans  &trans  &trans  &trans   &trans      &trans  &kp NUMBER_0                                            &kp UNDER
             >;
         };
 
