@@ -142,6 +142,15 @@
             label = "TOLAYER0ARROW";
             wait-ms = <0>;
         };
+
+        tolayer0sin: tolayer0sin {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0>, <&macro_release>, <&lt 1 ENTER>;
+
+            label = "TOLAYER0SIN";
+            wait-ms = <0>;
+        };
     };
 
     behaviors {
