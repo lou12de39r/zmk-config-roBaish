@@ -68,26 +68,14 @@
         };
 
         under {
-            bindings = <&kp UNDERSCORE>;
-            key-positions = <18 19>;
-            layers = <0 2>;
-        };
-
-        login {
-            bindings = <&pclogin>;
-            key-positions = <13 18>;
+            bindings = <&kp LC(BACKSLASH)>;
+            key-positions = <34 21>;
             layers = <0>;
         };
 
         wintab {
             bindings = <&kp LG(TAB)>;
             key-positions = <18 19>;
-        };
-
-        pologin {
-            bindings = <&potallogin>;
-            key-positions = <13 19>;
-            layers = <0>;
         };
 
         tab {
@@ -103,6 +91,7 @@
             #binding-cells = <1>;
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
+            wait-ms = <0>;
         };
 
         mkp_exit_AML: mkp_exit_AML {
@@ -125,20 +114,6 @@
             #binding-cells = <0>;
             bindings = <&kp ASTERISK &kp LEFT_PARENTHESIS &kp LEFT_ARROW>;
             label = "parenthesis";
-        };
-
-        pclogin: login {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp N &kp N1 &kp N5 &kp N0 &kp N3 &kp N4 &kp N5 &kp TAB &kp LS(W) &kp W &kp H &kp O &kp W &kp A &kp I &kp T &kp O &kp N1>;
-            label = "LOGIN";
-        };
-
-        potallogin: potallogin {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp N &kp N1 &kp N5 &kp N0 &kp N3 &kp N4 &kp N5 &kp TAB &kp T &kp O &kp M &kp I &kp I &kp N1 &kp N0 &kp N3 &kp N1>;
-            label = "POTALLOGIN";
         };
     };
 
