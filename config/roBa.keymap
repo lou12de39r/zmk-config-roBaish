@@ -116,39 +116,19 @@
             label = "parenthesis";
         };
 
-        tolayer0num: tolayer0 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&to 0>, <&macro_release>, <&lt 2 SPACE>;
-
+        tolayer0lt: tolayer0 {
+            compatible = "zmk,behavior-macro-two-param";
+            #binding-cells = <2>;
+            bindings = <&to 0 &macro_param_1to1 &macro_param_2to2 &lt MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
             label = "TOLAYER0";
             wait-ms = <0>;
         };
 
-        tolayer0bt: tolayer0bt {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&to 0>, <&macro_release>, <&lt 6 LANGUAGE_2>;
-
-            label = "TOLAYER0BT";
-            wait-ms = <0>;
-        };
-
-        tolayer0arrow: tolayer0arrow {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&to 0>, <&macro_release>, <&lt 3 LANGUAGE_1>;
-
-            label = "TOLAYER0ARROW";
-            wait-ms = <0>;
-        };
-
-        tolayer0sin: tolayer0sin {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&to 0>, <&macro_release>, <&lt 1 ENTER>;
-
-            label = "TOLAYER0SIN";
+        tolayer0mt: tolayer0mt {
+            compatible = "zmk,behavior-macro-two-param";
+            #binding-cells = <2>;
+            bindings = <&to 0 &macro_param_1to1 &macro_param_2to2 &mt MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
+            label = "TOLAYER0MT";
             wait-ms = <0>;
         };
     };
@@ -219,10 +199,10 @@
 
         MOUSE {
             bindings = <
-&to_layer_0 Q  &to_layer_0 W  &to_layer_0 E  &to_layer_0 R  &to_layer_0 T                                                 &none         &to_layer_0 LS(LC(TAB))  &to_layer_0 LC(T)  &to_layer_0 LC(TAB)  &mo 5
-&to_layer_0 A  &to_layer_0 S  &to_layer_0 D  &to_layer_0 F  &to_layer_0 G  &to_layer_0 ESCAPE      &to_layer_0 LS(LG(S))  &none         &mkp_exit_AML MB1        &mkp_exit_AML MB3  &mkp_exit_AML MB2    &none
-&to_layer_0 Z  &none          &none          &none          &none          &none                   &none                  &none         &mkp MB4                 &to_layer_0 LC(W)  &mkp MB5             &none
-&trans         &none          &none          &tolayer0bt    &tolayer0num   &tolayer0arrow          &to_layer_0 BACKSPACE  &tolayer0sin                                                                   &to_layer_0 DEL
+&to_layer_0 Q             &to_layer_0 W  &to_layer_0 E  &to_layer_0 R             &to_layer_0 T                                                             &none                &to_layer_0 LS(LC(TAB))  &to_layer_0 LC(T)  &to_layer_0 LC(TAB)  &mo 5
+&to_layer_0 A             &to_layer_0 S  &to_layer_0 D  &to_layer_0 F             &to_layer_0 G        &to_layer_0 ESCAPE            &to_layer_0 LS(LG(S))  &none                &mkp_exit_AML MB1        &mkp_exit_AML MB3  &mkp_exit_AML MB2    &none
+&tolayer0mt LEFT_SHIFT Z  &none          &none          &none                     &none                &none                         &none                  &none                &mkp MB4                 &to_layer_0 LC(W)  &mkp MB5             &none
+&trans                    &none          &none          &tolayer0lt 6 LANGUAGE_2  &tolayer0lt 2 SPACE  &tolayer0lt 3 LANGUAGE_1      &to_layer_0 BACKSPACE  &tolayer0lt 1 ENTER                                                                   &to_layer_0 DEL
             >;
         };
 
