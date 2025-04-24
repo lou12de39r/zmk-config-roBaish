@@ -163,10 +163,10 @@
 
         NUM {
             bindings = <
-&none   &kp F7  &kp F8  &kp F9  &kp F10                      &kp COLON     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp COLON
-&none   &kp F4  &kp F5  &kp F6  &kp F11  &trans      &none   &kp MINUS     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp DOUBLE_QUOTES
-&none   &kp F1  &kp F2  &kp F3  &kp F12  &none       &none   &kp PERIOD    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA
-&trans  &trans  &trans  &trans  &trans   &trans      &trans  &kp NUMBER_0                                            &kp UNDER
+&none   &kp F7  &kp F8  &kp F9  &kp F10                      &none         &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp COLON
+&none   &kp F4  &kp F5  &kp F6  &kp F11  &trans      &none   &kp COMMA     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
+&none   &kp F1  &kp F2  &kp F3  &kp F12  &none       &none   &kp PERIOD    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOUBLE_QUOTES
+&trans  &trans  &trans  &trans  &trans   &trans      &trans  &kp NUMBER_0                                            &kp SLASH
             >;
         };
 
