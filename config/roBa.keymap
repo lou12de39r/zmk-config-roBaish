@@ -201,8 +201,8 @@
             bindings = <
 &to_layer_0 Q             &to_layer_0 W  &to_layer_0 E  &to_layer_0 R             &to_layer_0 T                                                             &none                &to_layer_0 LS(LC(TAB))  &to_layer_0 LC(T)  &to_layer_0 LC(TAB)  &mo 5
 &to_layer_0 A             &to_layer_0 S  &to_layer_0 D  &to_layer_0 F             &to_layer_0 G        &to_layer_0 ESCAPE            &to_layer_0 LS(LG(S))  &none                &mkp_exit_AML MB1        &mkp_exit_AML MB3  &mkp_exit_AML MB2    &none
-&tolayer0mt LEFT_SHIFT Z  &none          &none          &none                     &none                &none                         &none                  &none                &mkp MB4                 &to_layer_0 LC(W)  &mkp MB5             &none
-&trans                    &none          &none          &tolayer0lt 6 LANGUAGE_2  &tolayer0lt 2 SPACE  &tolayer0lt 3 LANGUAGE_1      &to_layer_0 BACKSPACE  &tolayer0lt 1 ENTER                                                                   &to_layer_0 DEL
+&tolayer0mt LEFT_SHIFT Z  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V             &to_layer_0 B        &to_layer_0 TAB               &none                  &none                &mkp MB4                 &to_layer_0 LC(W)  &mkp MB5             &none
+&trans                    &trans         &trans         &tolayer0lt 6 LANGUAGE_2  &tolayer0lt 2 SPACE  &tolayer0lt 3 LANGUAGE_1      &to_layer_0 BACKSPACE  &tolayer0lt 1 ENTER                                                                   &to_layer_0 DEL
             >;
         };
 
