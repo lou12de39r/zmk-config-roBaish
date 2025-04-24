@@ -74,7 +74,7 @@
         };
 
         login {
-            bindings = <&login>;
+            bindings = <&pclogin>;
             key-positions = <13 18>;
             layers = <0>;
         };
@@ -82,6 +82,18 @@
         wintab {
             bindings = <&kp LG(TAB)>;
             key-positions = <18 19>;
+        };
+
+        pologin {
+            bindings = <&potallogin>;
+            key-positions = <13 19>;
+            layers = <0>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <10 11>;
+            layers = <0>;
         };
     };
 
@@ -115,11 +127,18 @@
             label = "parenthesis";
         };
 
-        login: login {
+        pclogin: login {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N &kp N1 &kp N5 &kp N0 &kp N3 &kp N4 &kp N5 &kp TAB &kp LS(W) &kp W &kp H &kp O &kp W &kp A &kp I &kp T &kp O &kp N1 &kp ENTER>;
+            bindings = <&kp N &kp N1 &kp N5 &kp N0 &kp N3 &kp N4 &kp N5 &kp TAB &kp LS(W) &kp W &kp H &kp O &kp W &kp A &kp I &kp T &kp O &kp N1>;
             label = "LOGIN";
+        };
+
+        potallogin: potallogin {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp N1 &kp N5 &kp N0 &kp N3 &kp N4 &kp N5 &kp TAB &kp T &kp O &kp M &kp I &kp I &kp N1 &kp N0 &kp N3 &kp N1>;
+            label = "POTALLOGIN";
         };
     };
 
@@ -150,8 +169,8 @@
         default_layer {
             bindings = <
 &kp Q             &kp W               &kp E         &kp R             &kp T                                               &kp Y        &kp U  &lt 5 I    &kp O    &lt 5 P
-&kp A             &kp S               &kp D         &kp F             &kp G        &kp ESCAPE              &parenthesis   &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X               &kp C         &kp V             &kp B        &kp TAB                 &kp LG(LS(S))  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&kp A             &kp S               &kp D         &kp F             &kp G        &kp ESCAPE              &none          &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&mt LEFT_SHIFT Z  &kp X               &kp C         &kp V             &kp B        &none                   &none          &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
 &kp LCTRL         &mt LEFT_WIN LG(D)  &kp LEFT_ALT  &lt 6 LANG_HANJA  &lt 2 SPACE  &lt 3 LANG_HANGEUL      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
             >;
 
@@ -161,7 +180,7 @@
         SYMBOLS {
             bindings = <
 &trans          &kp CARET        &kp DOUBLE_QUOTES  &kp ASTERISK  &kp LEFT_PARENTHESIS                      &kp ASTERISK       &kp LEFT_PARENTHESIS  &trans            &trans         &trans
-&kp PLUS        &kp DOLLAR       &kp PERCENT        &kp EQUAL     &trans                &trans      &trans  &kp RIGHT_BRACE    &kp PIPE              &kp SEMICOLON     &kp AMPERSAND  &kp BACKSLASH
+&kp PLUS        &kp DOLLAR       &kp PERCENT        &kp EQUAL     &trans                &trans      &trans  &kp RIGHT_BRACE    &kp PIPE              &kp SEMICOLON     &kp AMPERSAND  &kp LS(BACKSLASH)
 &kp LEFT_BRACE  &kp EXCLAMATION  &kp LEFT_BRACKET   &kp HASH      &trans                &trans      &trans  &kp RIGHT_BRACKET  &kp BACKSLASH         &kp SINGLE_QUOTE  &kp AT         &kp JP_PIPE
 &trans          &trans           &trans             &trans        &trans                &trans      &trans  &trans                                                                    &trans
             >;
@@ -169,10 +188,10 @@
 
         NUM {
             bindings = <
-&trans  &kp F7  &kp F8  &kp F9  &kp F10                      &kp MINUS     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp COLON
-&trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans      &trans  &kp EQUAL     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp DOUBLE_QUOTES
-&trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans      &trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD
-&trans  &trans  &trans  &trans  &trans   &trans      &trans  &kp NUMBER_0                                            &kp UNDER
+&none  &kp F7  &kp F8  &kp F9  &kp F10                             &kp MINUS     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp COLON
+&none  &kp F4  &kp F5  &kp F6  &kp F11  &none              &none   &kp EQUAL     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp DOUBLE_QUOTES
+&none  &kp F1  &kp F2  &kp F3  &kp F12  &kp LS(LG(S))      &none   &none         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD
+&none  &none   &none   &trans  &trans   &trans             &trans  &kp NUMBER_0                                            &none
             >;
         };
 
