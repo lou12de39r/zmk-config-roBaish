@@ -67,12 +67,6 @@
             key-positions = <28 25>;
         };
 
-        under {
-            bindings = <&kp LC(BACKSLASH)>;
-            key-positions = <34 21>;
-            layers = <0>;
-        };
-
         wintab {
             bindings = <&kp LG(TAB)>;
             key-positions = <18 19>;
@@ -170,16 +164,16 @@
 
         SYMBOLS {
             bindings = <
-&none           &kp CARET        &kp DOUBLE_QUOTES  &kp ASTERISK  &kp LEFT_PARENTHESIS                      &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp QUESTION      &trans         &trans
-&kp PLUS        &kp DOLLAR       &kp PERCENT        &kp EQUAL     &trans                &trans      &trans  &kp RIGHT_BRACE    &kp PIPE              &kp SEMICOLON     &kp AMPERSAND  &kp LS(BACKSLASH)
-&kp LEFT_BRACE  &kp EXCLAMATION  &kp LEFT_BRACKET   &kp HASH      &trans                &trans      &trans  &kp RIGHT_BRACKET  &kp BACKSLASH         &kp SINGLE_QUOTE  &kp AT         &kp JP_PIPE
+&none           &kp CARET        &kp DOUBLE_QUOTES  &kp ASTERISK  &kp LEFT_PARENTHESIS                      &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp QUESTION   &trans            &trans
+&kp PLUS        &kp DOLLAR       &kp PERCENT        &kp EQUAL     &trans                &trans      &trans  &kp RIGHT_BRACE    &kp PIPE              &kp SEMICOLON  &kp AMPERSAND     &kp LS(BACKSLASH)
+&kp LEFT_BRACE  &kp EXCLAMATION  &kp LEFT_BRACKET   &kp HASH      &trans                &trans      &trans  &kp RIGHT_BRACKET  &kp BACKSLASH         &kp SEMICOLON  &kp SINGLE_QUOTE  &kp JP_PIPE
 &trans          &none            &trans             &trans        &trans                &trans      &trans  &trans                                                                    &trans
             >;
         };
 
         NUM {
             bindings = <
-&none   &kp F7  &kp F8  &kp F9  &kp F10                      &none         &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp COLON
+&none   &kp F7  &kp F8  &kp F9  &kp F10                      &kp EQUAL     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp COLON
 &none   &kp F4  &kp F5  &kp F6  &kp F11  &trans      &none   &kp COMMA     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
 &none   &kp F1  &kp F2  &kp F3  &kp F12  &none       &none   &kp PERIOD    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOUBLE_QUOTES
 &trans  &trans  &trans  &trans  &trans   &trans      &trans  &kp NUMBER_0                                            &kp SLASH
