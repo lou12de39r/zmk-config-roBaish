@@ -156,7 +156,7 @@
             bindings = <
 &kp Q             &kp W               &kp E         &kp R             &kp T                                               &kp Y        &kp U  &lt 5 I    &kp O    &lt 5 P
 &kp A             &kp S               &kp D         &kp F             &kp G        &kp ESCAPE              &kp LS(LG(S))  &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X               &kp C         &kp V             &kp B        &kp TAB                 &none          &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&mt LEFT_SHIFT Z  &kp X               &kp C         &kp V             &kp B        &kp TAB                 &none          &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT QUESTION
 &kp LCTRL         &mt LEFT_WIN LG(D)  &kp LEFT_ALT  &lt 6 LANG_HANJA  &lt 2 SPACE  &lt 3 LANG_HANGEUL      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
             >;
 
