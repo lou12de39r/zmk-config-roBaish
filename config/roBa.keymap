@@ -166,7 +166,7 @@
         SYMBOLS {
             bindings = <
 &none           &kp CARET        &kp DOUBLE_QUOTES  &kp ASTERISK  &kp LEFT_PARENTHESIS                      &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp QUESTION   &kp LEFT_BRACKET  &trans
-&kp PLUS        &kp DOLLAR       &kp PERCENT        &kp EQUAL     &trans                &trans      &trans  &kp RIGHT_BRACE    &kp PIPE              &kp AT         &kp AMPERSAND     &kp LS(BACKSLASH)
+&kp PLUS        &kp DOLLAR       &kp PERCENT        &kp EQUAL     &trans                &trans      &trans  &kp RIGHT_BRACE    &kp PIPE              &kp AMPERSAND  &kp AT            &kp LS(BACKSLASH)
 &kp LEFT_BRACE  &kp EXCLAMATION  &kp LEFT_BRACKET   &kp HASH      &trans                &trans      &trans  &kp RIGHT_BRACKET  &kp BACKSLASH         &kp SEMICOLON  &kp SINGLE_QUOTE  &kp JP_PIPE
 &trans          &none            &trans             &trans        &trans                &trans      &trans  &trans                                                                    &trans
             >;
