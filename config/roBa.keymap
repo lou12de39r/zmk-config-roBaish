@@ -175,18 +175,18 @@
         NUM {
             bindings = <
 &trans          &kp F7  &kp F8  &kp F9  &kp F10                      &kp EQUAL     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp COLON
-&trans          &kp F4  &kp F5  &kp F6  &kp F11  &trans      &trans  &kp COMMA     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
-&kp LEFT_SHIFT  &kp F1  &kp F2  &kp F3  &kp F12  &trans      &trans  &kp PERIOD    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOUBLE_QUOTES
+&trans          &kp F4  &kp F5  &kp F6  &kp F11  &none       &none   &kp COMMA     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
+&kp LEFT_SHIFT  &kp F1  &kp F2  &kp F3  &kp F12  &none       &none   &kp PERIOD    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOUBLE_QUOTES
 &trans          &trans  &trans  &trans  &trans   &trans      &trans  &kp NUMBER_0                                            &kp SLASH
             >;
         };
 
         ARROW {
             bindings = <
-&trans          &trans              &kp LG(UP_ARROW)    &trans               &trans                      &trans       &kp LS(LC(TAB))     &kp UP_ARROW    &kp LC(TAB)          &trans
-&trans          &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &trans  &trans      &trans  &kp HOME     &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp END
-&kp LEFT_SHIFT  &trans              &trans              &trans               &trans  &trans      &trans  &kp PAGE_UP  &kp LS(LEFT_ARROW)  &trans          &kp LS(RIGHT_ARROW)  &kp PAGE_DOWN
-&trans          &trans              &trans              &trans               &trans  &trans      &trans  &trans                                                                &trans
+&trans          &trans          &kp UP_ARROW    &trans           &trans                      &trans       &kp LS(LC(TAB))     &kp UP_ARROW    &kp LC(TAB)          &trans
+&trans          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans      &trans  &kp HOME     &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp END
+&kp LEFT_SHIFT  &trans          &trans          &trans           &trans  &trans      &trans  &kp PAGE_UP  &kp LS(LEFT_ARROW)  &trans          &kp LS(RIGHT_ARROW)  &kp PAGE_DOWN
+&trans          &trans          &trans          &trans           &trans  &trans      &trans  &trans                                                                &trans
             >;
         };
 
@@ -201,10 +201,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans             &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp_exit_AML MB1  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans             &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                     &trans
+&trans          &trans  &trans  &trans  &trans                      &trans  &trans             &trans    &trans    &trans
+&trans          &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp_exit_AML MB1  &mkp MB3  &mkp MB2  &trans
+&kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB4           &trans    &mkp MB5  &trans
+&trans          &trans  &trans  &trans  &trans  &trans      &trans  &trans                                         &trans
             >;
         };
 
