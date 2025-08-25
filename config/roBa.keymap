@@ -187,8 +187,8 @@
         SYMBOLS {
             bindings = <
 &trans          &kp CARET        &kp DOUBLE_QUOTES  &kp ASTERISK  &trans                      &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp LEFT_BRACKET  &trans
-&kp 0x89        &kp DOLLAR       &kp PERCENT        &kp EQUAL     &trans  &trans      &trans  &kp RIGHT_BRACE    &kp PIPE              &kp AMPERSAND   &kp AT            &kp PLUS
-&kp LEFT_SHIFT  &kp EXCLAMATION  &kp LEFT_BRACKET   &kp HASH      &trans  &trans      &trans  &kp RIGHT_BRACKET  &kp BACKSLASH         &kp SEMICOLON   &kp SINGLE_QUOTE  &kp JP_PIPE
+&kp 0x89        &kp DOLLAR       &kp PERCENT        &kp EQUAL     &trans  &none       &none   &kp RIGHT_BRACE    &kp PIPE              &kp AMPERSAND   &kp AT            &kp PLUS
+&kp LEFT_SHIFT  &kp EXCLAMATION  &kp LEFT_BRACKET   &kp HASH      &trans  &none       &none   &kp RIGHT_BRACKET  &kp BACKSLASH         &kp SEMICOLON   &kp SINGLE_QUOTE  &kp JP_PIPE
 &trans          &none            &trans             &trans        &trans  &trans      &trans  &trans                                                                     &trans
             >;
         };
@@ -204,10 +204,10 @@
 
         ARROW {
             bindings = <
-&trans          &trans          &kp UP_ARROW    &trans           &trans                      &trans       &kp LS(LC(TAB))     &kp UP_ARROW    &kp LC(TAB)          &trans
-&trans          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans      &trans  &kp HOME     &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp END
-&kp LEFT_SHIFT  &trans          &trans          &trans           &trans  &trans      &trans  &kp PAGE_UP  &kp LS(LEFT_ARROW)  &trans          &kp LS(RIGHT_ARROW)  &kp PAGE_DOWN
-&trans          &trans          &trans          &trans           &trans  &trans      &trans  &trans                                                                &trans
+&trans          &trans          &kp UP_ARROW    &trans           &trans                             &trans    &kp LS(LC(TAB))     &kp UP_ARROW    &kp LC(TAB)          &trans
+&trans          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans      &kp PG_UP      &kp HOME  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp END
+&kp LEFT_SHIFT  &trans          &trans          &trans           &trans  &trans      &kp PAGE_DOWN  &trans    &kp LS(LEFT_ARROW)  &trans          &kp LS(RIGHT_ARROW)  &trans
+&trans          &trans          &trans          &trans           &trans  &trans      &trans         &trans                                                             &trans
             >;
         };
 
