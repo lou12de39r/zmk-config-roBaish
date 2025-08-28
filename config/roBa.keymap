@@ -151,14 +151,14 @@
         excelkeisen: excelkeisen {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp LEFT_ALT &kp H &kp B>;
             label = "EXCELKEISEN";
         };
 
-        tolayer5: tolayer0mo {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&to 5>;
+        tolayer0mo: tolayer0mo {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&to 0 &macro_param_1to1 &mo MACRO_PLACEHOLDER>;
             label = "TOLAYER0MO";
             wait-ms = <0>;
         };
@@ -237,19 +237,19 @@
 
         MOUSE {
             bindings = <
-&none           &kp LC(PG_UP)   &kp UP_ARROW    &kp LC(PG_DN)             &none                                                                     &trans       &kp LS(LC(TAB))  &kp LC(T)  &kp LC(TAB)  &mo 5
-&none           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW           &none                &to_layer_0 ESCAPE            &to_layer_0 LS(LG(S))  &trans       &mkp MB1         &mkp MB3   &mkp MB2     &trans
-&kp LEFT_SHIFT  &kp LC(X)       &kp LC(C)       &kp LC(V)                 &none                &to_layer_0 TAB               &trans                 &trans       &mkp MB4         &kp LC(W)  &mkp MB5     &trans
-&trans          &trans          &trans          &tolayer0lt 6 LANGUAGE_2  &tolayer0lt 2 SPACE  &tolayer0lt 3 LANGUAGE_1      &kp BACKSPACE          &lt 1 ENTER                                           &kp DEL
+&none           &kp LC(PG_UP)   &kp UP_ARROW    &kp LC(PG_DN)             &none                                                                     &trans  &kp LS(LC(TAB))  &kp LC(T)  &kp LC(TAB)  &tolayer0mo 5
+&none           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW           &none                &to_layer_0 ESCAPE            &to_layer_0 LS(LG(S))  &trans  &mkp MB1         &mkp MB3   &mkp MB2     &trans
+&kp LEFT_SHIFT  &kp LC(X)       &kp LC(C)       &kp LC(V)                 &none                &to_layer_0 TAB               &trans                 &trans  &mkp MB4         &kp LC(W)  &mkp MB5     &trans
+&trans          &trans          &trans          &tolayer0lt 6 LANGUAGE_2  &tolayer0lt 2 SPACE  &tolayer0lt 3 LANGUAGE_1      &trans                 &trans                                           &trans
             >;
         };
 
         SCROLL {
             bindings = <
-&trans          &kp LC(PG_UP)   &kp UP_ARROW    &kp LC(PG_DN)    &trans                                       &trans       &kp LS(LC(TAB))  &kp LC(T)  &kp LC(TAB)  &trans
-&trans          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans       &trans           &trans         &trans       &mkp MB1         &mkp MB3   &mkp MB2     &trans
-&kp LEFT_SHIFT  &kp LC(X)       &kp LC(C)       &kp LC(V)        &trans       &trans           &trans         &trans       &mkp MB4         &kp LC(W)  &mkp MB5     &trans
-&trans          &trans          &trans          &lt 6 LANG2      &lt 2 SPACE  &lt 3 LANG1      &kp BACKSPACE  &lt 1 ENTER                                           &kp DEL
+&trans          &kp LC(PG_UP)   &kp UP_ARROW    &kp LC(PG_DN)        &trans                                                &trans  &kp LS(LC(TAB))  &kp LC(T)  &kp LC(TAB)  &trans
+&excelkeisen    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW      &trans               &trans                   &trans  &trans  &mkp MB1         &mkp MB3   &mkp MB2     &trans
+&kp LEFT_SHIFT  &kp LC(X)       &kp LC(C)       &kp LC(V)            &trans               &trans                   &trans  &trans  &mkp MB4         &kp LC(W)  &mkp MB5     &trans
+&trans          &trans          &trans          &tolayer0lt 6 LANG2  &tolayer0lt 2 SPACE  &tolayer0lt 3 LANG1      &trans  &trans                                           &trans
             >;
         };
 
