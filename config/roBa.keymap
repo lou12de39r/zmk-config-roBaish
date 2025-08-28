@@ -222,19 +222,19 @@
 
         MOUSE {
             bindings = <
-&to_layer_0 Q   &to_layer_0 W   &kp UP_ARROW    &to_layer_0 R             &to_layer_0 T                                                             &trans               &kp LS(LC(TAB))    &to_layer_0 LC(T)  &kp LC(TAB)        &mo 5
-&to_layer_0 A   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW           &to_layer_0 G        &to_layer_0 ESCAPE            &to_layer_0 LS(LG(S))  &trans               &mkp_exit_AML MB1  &mkp_exit_AML MB3  &mkp_exit_AML MB2  &trans
-&kp LEFT_SHIFT  &to_layer_0 X   &to_layer_0 C   &to_layer_0 V             &to_layer_0 B        &to_layer_0 TAB               &trans                 &trans               &mkp MB4           &to_layer_0 LC(W)  &mkp MB5           &trans
-&trans          &trans          &trans          &tolayer0lt 6 LANGUAGE_2  &tolayer0lt 2 SPACE  &tolayer0lt 3 LANGUAGE_1      &to_layer_0 BACKSPACE  &tolayer0lt 1 ENTER                                                           &to_layer_0 DEL
+&none           &kp LC(PG_UP)   &kp UP_ARROW    &kp LC(PG_DN)             &none                                                                     &trans       &kp LS(LC(TAB))  &kp LC(T)  &kp LC(TAB)  &mo 5
+&none           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW           &none                &to_layer_0 ESCAPE            &to_layer_0 LS(LG(S))  &trans       &mkp MB1         &mkp MB3   &mkp MB2     &trans
+&kp LEFT_SHIFT  &kp LC(X)       &kp LC(C)       &kp LC(V)                 &none                &to_layer_0 TAB               &trans                 &trans       &mkp MB4         &kp LC(W)  &mkp MB5     &trans
+&trans          &trans          &trans          &tolayer0lt 6 LANGUAGE_2  &tolayer0lt 2 SPACE  &tolayer0lt 3 LANGUAGE_1      &kp BACKSPACE          &lt 1 ENTER                                           &kp DEL
             >;
         };
 
         SCROLL {
             bindings = <
-&trans          &trans          &kp UP_ARROW    &trans           &trans                      &trans  &kp LS(LC(TAB))    &kp LC(T)  &kp LC(TAB)  &trans
-&trans          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans      &trans  &trans  &mkp_exit_AML MB1  &mkp MB3   &mkp MB2     &trans
-&kp LEFT_SHIFT  &trans          &trans          &trans           &trans  &trans      &trans  &trans  &mkp MB4           &kp LC(W)  &mkp MB5     &trans
-&trans          &trans          &trans          &trans           &trans  &trans      &trans  &trans                                             &trans
+&trans          &kp LC(PG_UP)   &kp UP_ARROW    &kp LC(PG_DN)    &trans                      &trans  &kp LS(LC(TAB))  &kp LC(T)  &kp LC(TAB)  &trans
+&trans          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans      &trans  &trans  &mkp MB1         &mkp MB3   &mkp MB2     &trans
+&kp LEFT_SHIFT  &kp LC(X)       &kp LC(C)       &kp LC(V)        &trans  &trans      &trans  &trans  &mkp MB4         &kp LC(W)  &mkp MB5     &trans
+&trans          &trans          &trans          &trans           &trans  &trans      &trans  &trans                                           &kp DEL
             >;
         };
 
