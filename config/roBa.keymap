@@ -237,7 +237,7 @@
 
         MOUSE {
             bindings = <
-&none           &kp LC(PG_UP)   &kp UP_ARROW    &kp LC(PG_DN)             &none                                                                     &trans       &kp LS(LC(TAB))  &kp LC(T)  &kp LC(TAB)  &tolayer5
+&none           &kp LC(PG_UP)   &kp UP_ARROW    &kp LC(PG_DN)             &none                                                                     &trans       &kp LS(LC(TAB))  &kp LC(T)  &kp LC(TAB)  &mo 5
 &none           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW           &none                &to_layer_0 ESCAPE            &to_layer_0 LS(LG(S))  &trans       &mkp MB1         &mkp MB3   &mkp MB2     &trans
 &kp LEFT_SHIFT  &kp LC(X)       &kp LC(C)       &kp LC(V)                 &none                &to_layer_0 TAB               &trans                 &trans       &mkp MB4         &kp LC(W)  &mkp MB5     &trans
 &trans          &trans          &trans          &tolayer0lt 6 LANGUAGE_2  &tolayer0lt 2 SPACE  &tolayer0lt 3 LANGUAGE_1      &kp BACKSPACE          &lt 1 ENTER                                           &kp DEL
