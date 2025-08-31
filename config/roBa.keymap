@@ -184,6 +184,15 @@
             mods = <(MOD_LCTL|MOD_RCTL)>;
         };
 
+        htnbkr: htnbkr {
+            compatible = "zmk,behavior-mod-morph";
+            label = "HTNBKR";
+            bindings = <&mt LSHFT QUESTION>, <&kp EXCLAMATION>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
         multi_tap_tab_bspc: behavior_multi_tap {
             label = "MT_TAB_BSPC";
             #binding-cells = <0>;
@@ -199,10 +208,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W               &kp E         &kp R             &kp T                                               &kp Y        &kp U  &lt 5 I    &kp O    &lt 5 P
-&kp A             &kp S               &kp D         &kp F             &kp G        &kp ESCAPE              &kp LS(LG(S))  &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X               &kp C         &kp V             &kp B        &kp TAB                 &kp LS(0x87)   &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT QUESTION
-&kp LCTRL         &mt LEFT_WIN LG(D)  &kp LEFT_ALT  &lt 6 LANG_HANJA  &lt 2 SPACE  &lt 3 LANG_HANGEUL      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
+&kp Q             &kp W               &kp E         &kp R             &kp T                                                       &kp Y        &kp U  &lt 5 I    &kp O    &lt 5 P
+&kp A             &kp S               &kp D         &kp F             &kp G        &kp ESCAPE              &mt LS(LG(S)) LG(TAB)  &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&mt LEFT_SHIFT Z  &kp X               &kp C         &kp V             &kp B        &kp TAB                 &kp LS(0x87)           &kp N        &kp M  &kp COMMA  &kp DOT  &htnbkr
+&kp LCTRL         &mt LEFT_WIN LG(D)  &kp LEFT_ALT  &lt 6 LANG_HANJA  &lt 2 SPACE  &lt 3 LANG_HANGEUL      &kp BACKSPACE          &lt 1 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&scroll_up_down>;
