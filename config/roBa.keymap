@@ -246,10 +246,10 @@
 
         MOUSE {
             bindings = <
-&none           &kp LC(PG_UP)   &kp UP_ARROW    &kp LC(PG_DN)             &none                                                                     &trans  &kp LS(LC(TAB))    &kp LC(T)  &kp LC(TAB)  &mo 5
-&none           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW           &none                &to_layer_0 ESCAPE            &to_layer_0 LS(LG(S))  &trans  &mkp_exit_AML MB1  &mkp MB3   &mkp MB2     &trans
-&kp LEFT_SHIFT  &kp LC(X)       &kp LC(C)       &kp LC(V)                 &none                &to_layer_0 TAB               &trans                 &trans  &mkp MB4           &kp LC(W)  &mkp MB5     &trans
-&trans          &trans          &trans          &tolayer0lt 6 LANGUAGE_2  &tolayer0lt 2 SPACE  &tolayer0lt 3 LANGUAGE_1      &trans                 &trans                                             &trans
+&to_layer_0 Q   &kp LC(PG_UP)   &kp UP_ARROW    &kp LC(PG_DN)             &to_layer_0 T                                                             &trans               &trans             &kp LC(T)  &trans    &mo 5
+&to_layer_0 A   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW           &to_layer_0 G        &to_layer_0 ESCAPE            &to_layer_0 LS(LG(S))  &trans               &mkp_exit_AML MB1  &mkp MB3   &mkp MB2  &trans
+&kp LEFT_SHIFT  &to_layer_0 X   &to_layer_0 C   &to_layer_0 V             &to_layer_0 B        &to_layer_0 TAB               &trans                 &trans               &mkp MB4           &kp LC(W)  &mkp MB5  &trans
+&trans          &trans          &trans          &tolayer0lt 6 LANGUAGE_2  &tolayer0lt 2 SPACE  &tolayer0lt 3 LANGUAGE_1      &to_layer_0 BACKSPACE  &tolayer0lt 1 ENTER                                          &trans
             >;
         };
 
