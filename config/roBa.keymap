@@ -208,10 +208,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W               &kp E         &kp R             &kp T                                                       &kp Y        &kp U  &lt 5 I    &kp O    &lt 5 P
-&kp A             &kp S               &kp D         &kp F             &kp G        &kp ESCAPE              &mt LS(LG(S)) LG(TAB)  &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X               &kp C         &kp V             &kp B        &kp TAB                 &kp LS(0x87)           &kp N        &kp M  &kp COMMA  &kp DOT  &htnbkr
-&kp LCTRL         &mt LEFT_WIN LG(D)  &kp LEFT_ALT  &lt 6 LANG_HANJA  &lt 2 SPACE  &lt 3 LANG_HANGEUL      &kp BACKSPACE          &lt 1 ENTER                             &kp DEL
+&kp Q             &kp W               &kp E         &kp R             &kp T                                               &kp Y        &kp U  &lt 5 I    &kp O    &lt 5 P
+&kp A             &kp S               &kp D         &kp F             &kp G        &kp ESCAPE              &kp LS(LG(S))  &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&mt LEFT_SHIFT Z  &kp X               &kp C         &kp V             &kp B        &kp TAB                 &kp LS(0x87)   &kp N        &kp M  &kp COMMA  &kp DOT  &htnbkr
+&kp LCTRL         &mt LEFT_WIN LG(D)  &kp LEFT_ALT  &lt 6 LANG_HANJA  &lt 2 SPACE  &lt 3 LANG_HANGEUL      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -246,10 +246,10 @@
 
         MOUSE {
             bindings = <
-&to_layer_0 Q   &kp LC(PG_UP)   &kp UP_ARROW    &kp LC(PG_DN)             &to_layer_0 T                                                             &trans               &trans             &kp LC(T)  &trans    &mo 5
-&to_layer_0 A   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW           &to_layer_0 G        &to_layer_0 ESCAPE            &to_layer_0 LS(LG(S))  &trans               &mkp_exit_AML MB1  &mkp MB3   &mkp MB2  &trans
-&kp LEFT_SHIFT  &to_layer_0 X   &to_layer_0 C   &to_layer_0 V             &to_layer_0 B        &to_layer_0 TAB               &trans                 &trans               &mkp MB4           &kp LC(W)  &mkp MB5  &trans
-&trans          &trans          &trans          &tolayer0lt 6 LANGUAGE_2  &tolayer0lt 2 SPACE  &tolayer0lt 3 LANGUAGE_1      &to_layer_0 BACKSPACE  &tolayer0lt 1 ENTER                                          &trans
+&to_layer_0 Q   &kp LC(PG_UP)   &kp UP_ARROW    &kp LC(PG_DN)             &to_layer_0 T                                                             &trans               &kp LC(LS(TAB))    &kp LC(T)  &kp LC(TAB)  &mo 5
+&to_layer_0 A   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW           &to_layer_0 G        &to_layer_0 ESCAPE            &to_layer_0 LS(LG(S))  &trans               &mkp_exit_AML MB1  &mkp MB3   &mkp MB2     &trans
+&kp LEFT_SHIFT  &to_layer_0 X   &to_layer_0 C   &to_layer_0 V             &to_layer_0 B        &to_layer_0 TAB               &trans                 &trans               &mkp MB4           &kp LC(W)  &mkp MB5     &trans
+&trans          &trans          &trans          &tolayer0lt 6 LANGUAGE_2  &tolayer0lt 2 SPACE  &tolayer0lt 3 LANGUAGE_1      &to_layer_0 BACKSPACE  &tolayer0lt 1 ENTER                                             &trans
             >;
         };
 
