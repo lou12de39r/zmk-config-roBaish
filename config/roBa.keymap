@@ -154,117 +154,118 @@
             bindings = <&kp LEFT_ALT &kp H &kp B>;
             label = "EXCELKEISEN";
         };
-    mo2: mo2 {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp N2>, <&kp AT>;
 
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
+        mo2: mo2 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N2>, <&kp AT>;
 
-    mo6: mo6 {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp N6>, <&kp CARET>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
 
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
+        mo6: mo6 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N6>, <&kp CARET>;
 
-    mo7: mo7 {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp N7>, <&kp AMPS>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
 
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
+        mo7: mo7 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N7>, <&kp AMPS>;
 
-    mo8: mo8 {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp N8>, <&kp ASTRK>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
 
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
+        mo8: mo8 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N8>, <&kp ASTRK>;
 
-    mo9: mo9 {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp N9>, <&kp LPAR>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
 
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
+        mo9: mo9 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N9>, <&kp LPAR>;
 
-    mo0: mo0 {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp N0>, <&kp LS(N9)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
 
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
+        mo0: mo0 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N0>, <&kp LS(N9)>;
 
-    moA: moA {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp MINUS>, <&kp UNDERSCORE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
 
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
+        moA: moA {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS>, <&kp UNDERSCORE>;
 
-    moB: moB {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp EQUAL>, <&kp PLUS>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
 
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
+        moB: moB {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL>, <&kp PLUS>;
 
-    moC: moC {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp INT3>, <&kp LS(0x89)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
 
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
+        moC: moC {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp INT3>, <&kp LS(0x89)>;
 
-    moD: moD {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp LBKT>, <&kp LBRC>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
 
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
+        moD: moD {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT>, <&kp LBRC>;
 
-    moE: moE {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp RBKT>, <&kp RBRC>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
 
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
+        moE: moE {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp RBKT>, <&kp RBRC>;
 
-    moF: moF {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp SEMI>, <&kp KP_PLUS>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
 
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
+        moF: moF {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp SEMI>, <&kp KP_PLUS>;
 
-    moG: moG {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp APOSTROPHE>, <&kp DQT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
 
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
+        moG: moG {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp APOSTROPHE>, <&kp DQT>;
 
-    moH: moH {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp BACKSLASH>, <&kp TILDE2>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
 
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-     };
+        moH: moH {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSLASH>, <&kp TILDE2>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
 
         tolayer0mo: tolayer0mo {
             compatible = "zmk,behavior-macro-one-param";
@@ -339,10 +340,10 @@
 
         NUM {
             bindings = <
-&trans          &kp F7  &kp F8  &kp F9  &kp F10                      &kp EQUAL     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp COLON
-&trans          &kp F4  &kp F5  &kp F6  &kp F11  &none       &none   &kp COMMA     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
-&kp LEFT_SHIFT  &kp F1  &kp F2  &kp F3  &kp F12  &none       &none   &kp PERIOD    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOUBLE_QUOTES
-&trans          &trans  &trans  &trans  &trans   &trans      &trans  &kp NUMBER_0                                            &kp SLASH
+&trans          &kp F7  &kp F8  &kp F9  &kp F10                      &kp EQUAL   &mo7          &mo8          &mo9          &kp COLON
+&trans          &kp F4  &kp F5  &kp F6  &kp F11  &none       &none   &kp COMMA   &kp NUMBER_4  &kp NUMBER_5  &mo6          &kp MINUS
+&kp LEFT_SHIFT  &kp F1  &kp F2  &kp F3  &kp F12  &none       &none   &kp PERIOD  &kp NUMBER_1  &mo2          &kp NUMBER_3  &kp DOUBLE_QUOTES
+&trans          &trans  &trans  &trans  &trans   &trans      &trans  &mo0                                                  &kp SLASH
             >;
         };
 
