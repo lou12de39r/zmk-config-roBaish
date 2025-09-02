@@ -221,7 +221,7 @@
     moC: moC {
         compatible = "zmk,behavior-mod-morph";
         #binding-cells = <0>;
-        bindings = <&kp INT3>, <&kp JP_PIPE>;
+        bindings = <&kp INT3>, <&kp LS(0x89)>;
 
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
@@ -264,15 +264,7 @@
         bindings = <&kp BACKSLASH>, <&kp TILDE2>;
 
         mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-
-    moI: moI {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp JP_BSLH>, <&kp JP_UNDERSCORE>;
-
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
+     };
 
         tolayer0mo: tolayer0mo {
             compatible = "zmk,behavior-macro-one-param";
