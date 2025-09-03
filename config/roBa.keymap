@@ -358,19 +358,19 @@
 
         MOUSE {
             bindings = <
-&to_layer_0 Q   &kp LC(PG_UP)   &kp UP_ARROW    &kp LC(PG_DN)             &to_layer_0 T                                                             &trans               &kp LC(LS(TAB))    &kp LC(T)  &kp LC(TAB)  &mo 5
-&to_layer_0 A   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW           &to_layer_0 G        &to_layer_0 ESCAPE            &to_layer_0 LS(LG(S))  &kp UP_ARROW         &mkp_exit_AML MB1  &mkp MB3   &mkp MB2     &trans
-&kp LEFT_SHIFT  &to_layer_0 X   &to_layer_0 C   &to_layer_0 V             &to_layer_0 B        &to_layer_0 TAB               &trans                 &kp DOWN_ARROW       &mkp MB4           &kp LC(W)  &mkp MB5     &trans
-&trans          &trans          &trans          &tolayer0lt 6 LANGUAGE_2  &tolayer0lt 2 SPACE  &tolayer0lt 3 LANGUAGE_1      &to_layer_0 BACKSPACE  &tolayer0lt 1 ENTER                                             &trans
+&to_layer_0 Q   &to_layer_0 W  &to_layer_0 E  &to_layer_0 R             &to_layer_0 T                                                             &trans               &kp LC(LS(TAB))    &kp LC(T)  &kp LC(TAB)  &mo 5
+&to_layer_0 A   &to_layer_0 S  &to_layer_0 D  &to_layer_0 F             &to_layer_0 G        &to_layer_0 ESCAPE            &to_layer_0 LS(LG(S))  &kp UP_ARROW         &mkp_exit_AML MB1  &mkp MB3   &mkp MB2     &trans
+&kp LEFT_SHIFT  &to_layer_0 X  &to_layer_0 C  &to_layer_0 V             &to_layer_0 B        &to_layer_0 TAB               &trans                 &kp DOWN_ARROW       &mkp MB4           &kp LC(W)  &mkp MB5     &trans
+&trans          &trans         &trans         &tolayer0lt 6 LANGUAGE_2  &tolayer0lt 2 SPACE  &tolayer0lt 3 LANGUAGE_1      &to_layer_0 BACKSPACE  &tolayer0lt 1 ENTER                                             &trans
             >;
         };
 
         SCROLL {
             bindings = <
-&trans          &kp LC(PG_UP)   &kp UP_ARROW    &kp LC(PG_DN)        &trans                                                &trans          &kp LS(LC(TAB))  &kp LC(T)  &kp LC(TAB)  &trans
-&excelkeisen    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW      &trans               &trans                   &trans  &kp UP_ARROW    &mkp MB1         &mkp MB3   &mkp MB2     &trans
-&kp LEFT_SHIFT  &kp LC(X)       &kp LC(C)       &kp LC(V)            &trans               &trans                   &trans  &kp DOWN_ARROW  &mkp MB4         &kp LC(W)  &mkp MB5     &trans
-&trans          &trans          &trans          &tolayer0lt 6 LANG2  &tolayer0lt 2 SPACE  &tolayer0lt 3 LANG1      &trans  &trans                                                   &trans
+&trans                  &kp LC(PG_UP)   &kp UP_ARROW    &kp LC(PG_DN)        &trans                                                &trans          &kp LS(LC(TAB))  &kp LC(T)  &kp LC(TAB)  &trans
+&excelkeisen            &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW      &trans               &trans                   &trans  &kp UP_ARROW    &mkp MB1         &mkp MB3   &mkp MB2     &trans
+&to_layer_0 LEFT_SHIFT  &kp LC(X)       &kp LC(C)       &kp LC(V)            &trans               &trans                   &trans  &kp DOWN_ARROW  &mkp MB4         &kp LC(W)  &mkp MB5     &trans
+&trans                  &trans          &trans          &tolayer0lt 6 LANG2  &tolayer0lt 2 SPACE  &tolayer0lt 3 LANG1      &trans  &trans                                                   &trans
             >;
         };
 
